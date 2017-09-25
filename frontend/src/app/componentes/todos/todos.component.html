@@ -1,0 +1,18 @@
+<formulario></formulario>
+<br>
+<div class="panel panel-default">
+  <div class="panel-body">
+      <table class="table table-hover">
+          <thead>
+            <th>Descricao</th>
+            <th>Acao</th>
+          </thead>
+          <tbody *ngIf="_base.pessoa">
+            <tr *ngFor="let todo of _base.pessoa.todos">
+              <td [class.confirmado]="todo.confirmado">{{todo?.descricao}}</td>
+              <td><input type="checkbox" [checked]="todo.confirmado" (change)="modificarTodo(todo._id,$event)"></td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <p class="panel-title">
+      Perfil
+    </p>
+  </div>
+  <div class="panel-body">
+    <div class="panel panel-default" *ngIf="_base.pessoa.todos.length > 10">
+      <div class="panel-body">
+        <img src="assets/medal.png" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <h4>Nome <small>{{_base.pessoa?.nome}}</small></h4>
+    <h4>Idade <small>{{_base.pessoa?.idade}}</small></h4>
+    <h4>Quantidade de Todos <small>{{_base.pessoa?.todos?.length}}</small></h4>
+  </div>
+</div>

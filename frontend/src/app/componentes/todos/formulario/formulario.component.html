@@ -1,0 +1,10 @@
+<div class="row">
+    <form #f="ngForm" (ngSubmit)="adicionar(f)">
+        <div class="col-md-10">
+            <input type="text" class="form-control" placeholder="Coloque o nome do Todo" name="descricao" [(ngModel)]="descricao">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-success form-control" type="submit">Adicionar</button>
+        </div>
+    </form>
+</div>
